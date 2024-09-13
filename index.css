@@ -1,0 +1,104 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Main container */
+  .container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add Task Form */
+  .add-task-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .add-task-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .add-task-form input,
+  .add-task-form select,
+  .add-task-form button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .add-task-form input[type="date"] {
+    cursor: pointer;
+  }
+  
+  .add-task-form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-task-form button:hover {
+    background-color: #218838;
+  }
+  
+  /* Task List */
+  .task-list {
+    margin-top: 20px;
+  }
+  
+  .task-list h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .task-item span {
+    font-size: 1em;
+  }
+  
+  .task-item .priority-low {
+    color: #007bff;
+  }
+  
+  .task-item .priority-high {
+    color: #dc3545;
+  }
+  
+  /* No task found */
+  .no-tasks {
+    text-align: center;
+    color: #888;
+    font-size: 1.2em;
+  }
+  
