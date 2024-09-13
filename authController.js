@@ -1,4 +1,9 @@
 // backend/controllers/authController.js
+// backend/controllers/authController.js
+const jwt = require('jsonwebtoken');
+
+const User = require('../models/User'); // Path to User.js from controllers directory
+
 exports.register = async (req, res) => {
   const { username, password } = req.body;
   if (!username || !password) {
